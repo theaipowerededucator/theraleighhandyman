@@ -58,14 +58,15 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-24">
         <!-- Brand -->
-        <div class="flex items-center flex-1 min-w-0 pr-4">
+        <!-- Reduced right padding (pr-2) to give text more space -->
+        <div class="flex items-center flex-1 min-w-0 pr-2">
           <a href="#" class="flex flex-col group">
-            <!-- Increased sizes: text-xl (mobile) / text-3xl (desktop) -->
-            <h1 class="text-xl sm:text-3xl font-extrabold tracking-tight text-white leading-tight">
+            <!-- whitespace-nowrap forces single line. tracking-tight helps it fit. text-lg is a good balance. -->
+            <h1 class="text-lg sm:text-3xl font-extrabold tracking-tight text-white leading-none whitespace-nowrap">
               The Raleigh Handyman
             </h1>
-            <!-- Increased sizes: text-xs (mobile) / text-sm (desktop) -->
-            <span class="text-xs sm:text-sm text-brand-gold font-medium uppercase tracking-widest mt-1">
+            <!-- whitespace-nowrap for subheading too -->
+            <span class="text-xs sm:text-sm text-brand-gold font-medium uppercase tracking-widest mt-1 whitespace-nowrap">
               Repairs • Installs • Assembly
             </span>
           </a>
@@ -84,8 +85,9 @@
         </nav>
 
         <!-- Mobile Buttons -->
-        <div class="md:hidden flex items-center gap-4 shrink-0">
-          <a href="tel:9192101525" class="bg-brand-red text-white p-3 rounded-full shadow-md hover:bg-brand-darkRed transition">
+        <!-- Reduced gap-4 to gap-2 to save horizontal space -->
+        <div class="md:hidden flex items-center gap-2 shrink-0">
+          <a href="tel:9192101525" class="bg-brand-red text-white p-2.5 rounded-full shadow-md hover:bg-brand-darkRed transition">
             <i data-lucide="phone" class="w-5 h-5"></i>
           </a>
           <button id="mobile-menu-btn" class="text-white hover:text-brand-gold p-1 transition">
