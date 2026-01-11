@@ -56,24 +56,23 @@
   <!-- Sticky Header -->
   <header class="fixed w-full top-0 z-50 bg-brand-navy shadow-md border-b border-brand-steel">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <!-- Added gap-4 to ensure separation between logo and buttons -->
-      <div class="flex justify-between items-center h-24 gap-4">
+      <div class="flex justify-between items-center h-24">
         <!-- Brand -->
-        <!-- Added min-w-0 to allow flex shrinking if absolutely necessary -->
-        <div class="flex items-center min-w-0">
+        <div class="flex items-center flex-1 min-w-0 pr-4">
           <a href="#" class="flex flex-col group">
-            <!-- Adjusted text size: text-xl on mobile, text-2xl on larger screens -->
-            <h1 class="text-xl sm:text-2xl font-extrabold tracking-tight text-white leading-none whitespace-nowrap">
+            <!-- Increased sizes: text-xl (mobile) / text-3xl (desktop) -->
+            <h1 class="text-xl sm:text-3xl font-extrabold tracking-tight text-white leading-tight">
               The Raleigh Handyman
             </h1>
-            <span class="text-xs text-brand-gold font-medium uppercase tracking-widest mt-1 whitespace-nowrap">
+            <!-- Increased sizes: text-xs (mobile) / text-sm (desktop) -->
+            <span class="text-xs sm:text-sm text-brand-gold font-medium uppercase tracking-widest mt-1">
               Repairs • Installs • Assembly
             </span>
           </a>
         </div>
 
         <!-- Desktop Nav -->
-        <nav class="hidden md:flex space-x-8 items-center flex-shrink-0">
+        <nav class="hidden md:flex space-x-8 items-center shrink-0">
           <a href="#services" class="text-gray-100 hover:text-brand-gold font-medium transition">Services</a>
           <a href="#reviews" class="text-gray-100 hover:text-brand-gold font-medium transition">Reviews</a>
           <a href="#contact" class="text-gray-100 hover:text-brand-gold font-medium transition">Contact</a>
@@ -84,14 +83,12 @@
           </a>
         </nav>
 
-        <!-- Mobile -->
-        <!-- Increased gap from 4 to 6 for more space between phone and menu buttons -->
-        <div class="md:hidden flex items-center gap-6 flex-shrink-0">
+        <!-- Mobile Buttons -->
+        <div class="md:hidden flex items-center gap-4 shrink-0">
           <a href="tel:9192101525" class="bg-brand-red text-white p-3 rounded-full shadow-md hover:bg-brand-darkRed transition">
             <i data-lucide="phone" class="w-5 h-5"></i>
           </a>
-          <!-- Increased padding to p-2 for a larger touch target -->
-          <button id="mobile-menu-btn" class="text-white hover:text-brand-gold p-2 transition">
+          <button id="mobile-menu-btn" class="text-white hover:text-brand-gold p-1 transition">
             <i data-lucide="menu" class="w-8 h-8"></i>
           </button>
         </div>
