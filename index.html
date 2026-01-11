@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Raleigh Handyman | Raleigh, NC</title>
+  <meta name="description" content="The Raleigh Handyman — dependable home repairs and installations in Raleigh, NC. 190 Google reviews. Call or text 919-210-1525." />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0B1F3A',      /* Primary */
+              steel: '#1F3B5C',     /* Dark accent */
+              sky: '#EAF2FF',       /* Light background */
+              charcoal: '#1F2328',  /* Body text */
+              gold: '#F8A426',      /* Highlights */
+              red: '#CE2029',       /* CTAs */
+              darkRed: '#a31920',   /* CTA hover */
+              slate: '#F4F6F8'      /* Section bg */
+            }
+          },
+          fontFamily: { sans: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { font-family: 'Inter', sans-serif; color: #1F2328; background: #FFFFFF; }
+    html { scroll-behavior: smooth; }
+    .hero-overlay {
+      background: linear-gradient(rgba(11, 31, 58, 0.55), rgba(0, 0, 0, 0.60));
+    }
+  </style>
+</head>
+
+<body class="antialiased text-brand-charcoal">
+
+  <!-- Sticky Header -->
+  <header class="fixed w-full top-0 z-50 bg-brand-navy shadow-md border-b border-brand-steel">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-24">
+        <!-- Brand -->
+        <div class="flex-shrink-0 flex items-center">
+          <a href="#" class="flex flex-col group">
+            <h1 class="text-2xl font-extrabold tracking-tight text-white leading-none">
+              The Raleigh Handyman
+            </h1>
+            <span class="text-xs text-brand-gold font-medium uppercase tracking-widest mt-1">
+              Repairs • Installs • Assembly
+            </span>
+          </a>
+        </div>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex space-x-8 items-center">
+          <a href="#services" class="text-gray-100 hover:text-brand-gold font-medium transition">Services</a>
+          <a href="#reviews" class="text-gray-100 hover:text-brand-gold font-medium transition">Reviews</a>
+          <a href="#contact" class="text-gray-100 hover:text-brand-gold font-medium transition">Contact</a>
+
+          <a href="tel:9192101525" class="bg-brand-red hover:bg-brand-darkRed text-white px-6 py-3 rounded-lg font-bold transition shadow-md flex items-center gap-2">
+            <i data-lucide="phone" class="w-4 h-4 text-white"></i>
+            (919) 210-1525
+          </a>
+        </nav>
+
+        <!-- Mobile -->
+        <div class="md:hidden flex items-center gap-4">
+          <a href="tel:9192101525" class="bg-brand-red text-white p-3 rounded-full shadow-md">
+            <i data-lucide="phone" class="w-5 h-5"></i>
+          </a>
+          <button id="mobile-menu-btn" class="text-white hover:text-brand-gold p-1">
+            <i data-lucide="menu" class="w-8 h-8"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-brand-navy border-t border-brand-steel absolute w-full shadow-lg">
+      <div class="px-4 pt-4 pb-6 space-y-2">
+        <a href="#services" class="block px-4 py-3 text-base font-medium text-white hover:bg-brand-steel rounded-lg">Services</a>
+        <a href="#reviews" class="block px-4 py-3 text-base font-medium text-white hover:bg-brand-steel rounded-lg">Reviews</a>
+        <a href="#contact" class="block px-4 py-3 text-base font-bold text-white bg-brand-red rounded-lg mt-4 text-center">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative pt-24 pb-32 flex items-center min-h-[80vh] lg:min-h-[700px]">
+    <div class="absolute inset-0 z-0">
+      <!-- Royalty-free placeholder image -->
+      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=2000"
+           alt="Handyman tools and home repair"
+           class="w-full h-full object-cover">
+      <div class="hero-overlay absolute inset-0"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white mt-10">
+      <div class="inline-flex items-center gap-2 py-1 px-4 rounded-full bg-brand-navy/90 backdrop-blur-sm text-white text-xs font-bold tracking-widest uppercase mb-6 shadow-lg border border-brand-gold/30">
+        <i data-lucide="map-pin" class="w-3 h-3 text-brand-gold"></i>
+        Serving Raleigh, NC
+      </div>
+
+      <h2 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 drop-shadow-lg">
+        Reliable Repairs.<br/>Clean Installations.
+      </h2>
+
+      <p class="text-lg md:text-xl text-gray-100 mb-10 max-w-2xl mx-auto font-light leading-relaxed drop-shadow-md">
+        Need help fast? The Raleigh Handyman provides professional home repairs and installs with clear communication and quality work.
+      </p>
+
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="tel:9192101525" class="bg-brand-red hover:bg-brand-darkRed text-white text-lg px-8 py-4 rounded-xl font-bold transition shadow-xl flex items-center justify-center gap-3 transform hover:-translate-y-1 ring-4 ring-brand-red/30 border border-white/10">
+          <i data-lucide="phone-call" class="w-5 h-5 text-white"></i>
+          Call/Text (919) 210-1525
+        </a>
+        <a href="#contact" class="bg-white hover:bg-gray-100 text-brand-charcoal text-lg px-8 py-4 rounded-xl font-bold transition shadow-xl flex items-center justify-center gap-2 transform hover:-translate-y-1">
+          Request Service
+        </a>
+      </div>
+
+      <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-6 text-sm text-gray-200 font-medium">
+        <span class="flex items-center gap-1.5"><i data-lucide="star" class="w-5 h-5 text-brand-gold"></i> 4.9 ★ Rating</span>
+        <span class="flex items-center gap-1.5"><i data-lucide="message-circle" class="w-5 h-5 text-brand-gold"></i> 190 Google Reviews</span>
+        <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-gold"></i> Prompt • Professional • Friendly</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Prop -->
+  <section class="py-20 bg-white border-b border-gray-100">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-2xl md:text-3xl font-bold text-brand-navy mb-6">A Handyman You’ll Actually Want to Call Back</h3>
+      <p class="text-brand-charcoal text-lg leading-relaxed">
+        <span class="font-bold text-brand-navy">The Raleigh Handyman</span> is known for punctuality, efficiency, and clear communication.
+        From quick fixes to careful installs, you’ll get a clean job done right—without the runaround.
+      </p>
+      <div class="mt-8 flex justify-center gap-4 flex-wrap">
+        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-slate text-sm font-semibold border border-gray-200">
+          <i data-lucide="clock" class="w-4 h-4 text-brand-gold"></i> Same-week availability (often)
+        </span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-slate text-sm font-semibold border border-gray-200">
+          <i data-lucide="shield-check" class="w-4 h-4 text-brand-gold"></i> Professional workmanship
+        </span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-slate text-sm font-semibold border border-gray-200">
+          <i data-lucide="sparkles" class="w-4 h-4 text-brand-gold"></i> Clean finish & tidy workspace
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-24 bg-brand-slate">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-brand-navy font-bold tracking-wider uppercase text-sm">Services</span>
+        <h3 class="text-3xl font-bold text-brand-charcoal sm:text-4xl mt-2">Popular Help Around the House</h3>
+        <p class="text-brand-charcoal/80 mt-4 max-w-2xl mx-auto">
+          Here are some of the most requested services. If you don’t see your project listed, call or text—chances are it’s covered.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 hover:shadow-lg hover:border-brand-navy/20 transition group">
+          <div class="w-14 h-14 bg-brand-slate rounded-xl flex items-center justify-center mb-6 text-brand-navy group-hover:bg-brand-navy group-hover:text-brand-gold transition">
+            <i data-lucide="lamp" class="w-7 h-7"></i>
+          </div>
+          <h4 class="text-xl font-bold text-brand-charcoal mb-3">Light Fixtures & Fans</h4>
+          <p class="text-brand-charcoal/80">Swap fixtures, replace fans, and get things installed correctly and safely.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 hover:shadow-lg hover:border-brand-navy/20 transition group">
+          <div class="w-14 h-14 bg-brand-slate rounded-xl flex items-center justify-center mb-6 text-brand-navy group-hover:bg-brand-navy group-hover:text-brand-gold transition">
+            <i data-lucide="door-open" class="w-7 h-7"></i>
+          </div>
+          <h4 class="text-xl font-bold text-brand-charcoal mb-3">Door Repair</h4>
+          <p class="text-brand-charcoal/80">Loose doors, alignment issues, latches, hinges, and quick fixes that matter.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 hover:shadow-lg hover:border-brand-navy/20 transition group">
+          <div class="w-14 h-14 bg-brand-slate rounded-xl flex items-center justify-center mb-6 text-brand-navy group-hover:bg-brand-navy group-hover:text-brand-gold transition">
+            <i data-lucide="construction" class="w-7 h-7"></i>
+          </div>
+          <h4 class="text-xl font-bold text-brand-charcoal mb-3">Appliance Installation</h4>
+          <p class="text-brand-charcoal/80">Help installing household appliances and getting everything set up properly.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 hover:shadow-lg hover:border-brand-navy/20 transition group">
+          <div class="w-14 h-14 bg-brand-slate rounded-xl flex items-center justify-center mb-6 text-brand-navy group-hover:bg-brand-navy group-hover:text-brand-gold transition">
+            <i data-lucide="sofa" class="w-7 h-7"></i>
+          </div>
+          <h4 class="text-xl font-bold text-brand-charcoal mb-3">Furniture Assembly</h4>
+          <p class="text-brand-charcoal/80">Fast, correct assembly so you don’t spend your weekend wrestling instructions.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 hover:shadow-lg hover:border-brand-navy/20 transition group">
+          <div class="w-14 h-14 bg-brand-slate rounded-xl flex items-center justify-center mb-6 text-brand-navy group-hover:bg-brand-navy group-hover:text-brand-gold transition">
+            <i data-lucide="scan" class="w-7 h-7"></i>
+          </div>
+          <h4 class="text-xl font-bold text-brand-charcoal mb-3">Electric Inspection</h4>
+          <p class="text-brand-charcoal/80">Basic inspection/troubleshooting help and guidance for common electrical concerns.</p>
+        </div>
+
+        <div class="bg-brand-navy p-8 rounded-2xl shadow-lg border border-brand-navy text-white flex flex-col justify-center items-center text-center relative overflow-hidden group">
+          <div class="absolute inset-0 bg-brand-steel opacity-0 group-hover:opacity-100 transition duration-500"></div>
+          <div class="relative z-10">
+            <i data-lucide="phone-forwarded" class="w-12 h-12 mb-4 text-brand-gold mx-auto"></i>
+            <h4 class="text-xl font-bold mb-2">Not sure what it’s called?</h4>
+            <p class="text-white/80 mb-6">Describe the issue and get quick guidance and scheduling.</p>
+            <a href="tel:9192101525" class="inline-block bg-brand-red text-white px-6 py-2.5 rounded-lg font-bold text-sm hover:bg-brand-darkRed transition">
+              Call/Text Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Simple list (mirrors Google “Services Offered”) -->
+      <div class="mt-14 max-w-5xl mx-auto">
+        <div class="bg-white rounded-2xl border border-gray-200 p-8">
+          <div class="flex items-center justify-between flex-wrap gap-3 mb-6">
+            <h4 class="text-xl font-extrabold text-brand-charcoal">Services Offered</h4>
+            <span class="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-brand-navy bg-brand-sky px-3 py-1.5 rounded-full border border-gray-200">
+              <i data-lucide="badge-check" class="w-4 h-4 text-brand-gold"></i> Verified by Business
+            </span>
+          </div>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Appliance installation</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Handyman assembly</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Handyman caulking</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Door installation</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Door repair</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Electric inspection</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Furniture assembly</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Handyman installation</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h3 class="text-3xl font-bold text-center text-brand-charcoal mb-4">Highly Rated in Raleigh</h3>
+      <p class="text-center text-brand-charcoal/80 max-w-2xl mx-auto mb-12">
+        Homeowners consistently mention punctuality, efficiency, and professionalism.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-brand-slate p-8 rounded-xl border border-gray-200">
+          <div class="flex text-brand-gold mb-4">
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          </div>
+          <p class="text-brand-charcoal italic mb-4">
+            “Two days before the movers were to deliver our furniture my plans to hang six light fixtures and a ceiling fan fell through.
+            Luckily, Alan was able to work us into his schedule and get everything done... He was punctual, efficient and clearly communicated
+            what he would be doing.”
+          </p>
+          <p class="text-sm font-bold text-brand-navy">- Google Review</p>
+        </div>
+
+        <div class="bg-brand-slate p-8 rounded-xl border border-gray-200">
+          <div class="flex text-brand-gold mb-4">
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          </div>
+          <p class="text-brand-charcoal italic mb-4">
+            “We reached out to Allan for a repair at our short term rental unit. He was able to quickly fit us in and had the job done in under an hour.
+            He was super knowledgeable and even did a quick repair on a door that was loose. Highly recommend!”
+          </p>
+          <p class="text-sm font-bold text-brand-navy">- Google Review</p>
+        </div>
+
+        <div class="bg-brand-slate p-8 rounded-xl border border-gray-200">
+          <div class="flex text-brand-gold mb-4">
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          </div>
+          <p class="text-brand-charcoal italic mb-4">
+            “Alan is AMAZING. He came over to swap out a light fixture and faucet, teaching us about the process along the way.
+            Extremely knowledgeable, professional, and friendly; he was an absolute delight.”
+          </p>
+          <p class="text-sm font-bold text-brand-navy">- Google Review</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-brand-navy">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-brand-steel/45 rounded-3xl p-8 md:p-12 lg:p-16 text-center border border-white/10 backdrop-blur-sm shadow-2xl">
+        <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">Need a Handyman in Raleigh?</h3>
+        <p class="text-gray-200 mb-10 text-lg max-w-2xl mx-auto">
+          Call or text for scheduling and availability. Clear communication. Quality work. No hassle.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-8 text-left max-w-4xl mx-auto">
+
+          <!-- Phone -->
+          <div class="flex items-start">
+            <div class="bg-white/10 p-3 rounded-lg mr-4 shrink-0">
+              <i data-lucide="phone" class="w-6 h-6 text-brand-gold"></i>
+            </div>
+            <div>
+              <p class="text-brand-gold text-xs font-bold uppercase tracking-widest mb-1">Call or Text</p>
+              <a href="tel:9192101525" class="text-2xl font-bold text-white hover:text-brand-gold transition">(919) 210-1525</a>
+            </div>
+          </div>
+
+          <!-- Address -->
+          <div class="flex items-start">
+            <div class="bg-white/10 p-3 rounded-lg mr-4 shrink-0">
+              <i data-lucide="map-pin" class="w-6 h-6 text-brand-gold"></i>
+            </div>
+            <div>
+              <p class="text-brand-gold text-xs font-bold uppercase tracking-widest mb-1">Location</p>
+              <p class="text-lg font-semibold text-white">5345 Sahalee Way</p>
+              <p class="text-sm text-gray-300">Raleigh, NC 27604</p>
+              <a class="text-sm text-white/90 underline hover:text-brand-gold transition"
+                 target="_blank" rel="noopener"
+                 href="https://www.google.com/maps?q=5345+Sahalee+Way,+Raleigh,+NC+27604">
+                Get directions
+              </a>
+            </div>
+          </div>
+
+          <!-- Hours -->
+          <div class="flex items-start">
+            <div class="bg-white/10 p-3 rounded-lg mr-4 shrink-0">
+              <i data-lucide="clock" class="w-6 h-6 text-brand-gold"></i>
+            </div>
+            <div>
+              <p class="text-brand-gold text-xs font-bold uppercase tracking-widest mb-1">Business Hours</p>
+              <div class="text-white text-sm space-y-1">
+                <p><span class="w-24 inline-block font-semibold">Mon:</span> 8:00 AM – 9:00 PM</p>
+                <p><span class="w-24 inline-block font-semibold">Tue:</span> 8:00 AM – 9:00 PM</p>
+                <p><span class="w-24 inline-block font-semibold">Wed:</span> 8:00 AM – 9:00 PM</p>
+                <p><span class="w-24 inline-block font-semibold">Thu:</span> 8:00 AM – 9:00 PM</p>
+                <p><span class="w-24 inline-block font-semibold">Fri:</span> 8:00 AM – 9:00 PM</p>
+                <p><span class="w-24 inline-block font-semibold">Sat:</span> 8:00 AM – 9:00 PM</p>
+                <p><span class="w-24 inline-block font-semibold text-white/60">Sun:</span> Closed</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-12 pt-10 border-t border-white/10">
+          <a href="tel:9192101525" class="inline-flex items-center justify-center bg-brand-red hover:bg-brand-darkRed text-white px-8 py-4 rounded-xl font-bold text-lg transition shadow-lg w-full sm:w-auto transform hover:-translate-y-1 gap-2">
+            <i data-lucide="phone-call" class="w-5 h-5"></i>
+            Get Help Now
+          </a>
+          <p class="text-white/70 text-xs mt-4">
+            Tip: if you don’t reach us immediately, leave a voicemail or text and we’ll get back to you as soon as possible.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-navy text-white py-12 border-t border-brand-steel">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="text-center md:text-left">
+        <h4 class="text-xl font-bold text-white mb-2">The Raleigh Handyman</h4>
+        <p class="text-gray-300 text-sm">Home repairs, installations, and assembly in Raleigh, NC.</p>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-300">
+        <span>Serving Raleigh & nearby areas</span>
+        <span class="hidden sm:inline">|</span>
+        <a href="#contact" class="hover:text-brand-gold transition">Contact</a>
+      </div>
+
+      <div class="text-center md:text-right">
+        <p class="text-gray-400 text-xs">© <span id="year"></span> The Raleigh Handyman.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    lucide.createIcons();
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => menu.classList.add('hidden'));
+    });
+  </script>
+</body>
+</html>
